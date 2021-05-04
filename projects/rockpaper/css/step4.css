@@ -1,0 +1,26 @@
+#WinOrLoseBlock{
+	margin: 220px auto;
+	display: none;
+	text-align: center;
+}
+
+#WinOrLoseBlock>span{
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* play again button */
+
+#WinOrLoseBlock div{
+	margin-top: 20px;
+	font-size: 18px;
+	text-align: center;
+	padding: 20px 30px;
+	color: hsl(349, 71%, 52%);
+	letter-spacing: 2px;
+	background: white;
+	border-radius: 8px;
+	text-transform: uppercase;
+	cursor: pointer;
+}

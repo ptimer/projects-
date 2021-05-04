@@ -1,0 +1,283 @@
+@media screen and (max-width: 1440px){
+
+	.scoreBlock{
+
+	}
+
+
+	#pickBlock>div>img{
+		width: 40px;
+	}
+}
+
+
+@media screen and (max-width: 1024px){
+	/* step 2 */
+	#YouPickedBlock{
+		max-width: 700px;
+	}
+
+	#YouPickedBlock span {
+	    font-size: 26px;
+	}
+
+
+	.pickBlock_img_step2{
+		width: 200px;
+		height: 200px;
+	}
+
+	.pickBlock_img_step2>img{
+		width: 75px;
+	}
+
+	.pickBlock__paper_step2,.pickBlock__scissors_step2,.pickBlock__rock_step2{
+		border-width: 20px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	#YouPickedBlock{
+		margin: 0 35px;
+		margin-top: 50px;
+	   
+	    grid-template-columns: repeat(2, 1fr)  !important;
+	    grid-template-rows: repeat(2, 1fr);
+	    grid-template-areas:
+        "a c"
+        "b b";
+	}
+
+	#YouPickedBlock_left_bottom{
+		grid-area: a;
+	}
+
+	#WinOrLoseBlock{
+		grid-area: b;
+		margin: 100px auto;
+		margin-bottom: 20px;
+	}
+
+	span#winOrLoseText{
+		font-size: 70px;
+	}
+
+	#YouPickedBlock_right_bottom{
+		grid-area: c;
+	}
+
+	.scoreBlock__left {
+	    font-size: 30px;
+	    line-height: 23px;
+   	}
+
+   	#YouPickedBlock_left_bottom, #YouPickedBlock_right_bottom {
+	    font-size: 21px;
+	    display: flex;
+	    flex-direction: column-reverse;
+	}
+
+	#PlayerChoosen, #PCChoosen{
+		margin: auto;
+	}
+
+   	.scoreBlock__right {
+		padding: 10px 30px;
+   	}
+
+	.scoreBlock__right>span:nth-of-type(1) {
+		font-size: 14px;
+	}	
+
+	.scoreBlock__right>span:nth-of-type(2) {
+		font-size: 50px;
+
+	}
+
+	.scoreBlock{
+		margin:0 35px;
+		border-width: 5px;
+	}
+
+	#pickBlock{
+		margin: 0 auto;
+	}
+
+	#rules_button{
+		display: block;
+		position: unset;
+		width: 120px;
+		margin: 25px auto;
+	}
+
+	#WinOrLoseBlock div{
+		color: hsl(217, 16%, 45%);
+	}
+
+	#circle{
+		width: 190px;
+		height: 190px;
+	}
+
+	.bg-triangle{
+		left: calc(88% / 2 - 152.5px)/*calc(50% - 30.5%)*/;
+    	width: 360px;
+	}
+
+}
+
+@media screen and (max-width: 550px){
+
+	#rules_modal {
+	    width: 250px;
+	    border-radius: 8px;
+	    background: white;
+	    padding: 20px 10px;
+	    font-size: 40px;
+	    left: calc(50vw - 125px);
+	    top: calc(50vh - 168.5px);
+	}
+
+	.rules_modal_bottom img{
+		width: 200px;
+	}
+
+	.rules_modal_top>span {
+	    font-size: 20px;
+	}
+
+	.pickBlock_img_step2{
+		width: 125px;
+		height: 125px;
+	}
+
+	.pickBlock_img_step2>img{
+		width: 40px;
+	}
+
+	#YouPickedBlock span {
+	    font-size: 15px;
+	}
+
+	.pickBlock__paper_step2, .pickBlock__scissors_step2, .pickBlock__rock_step2 {
+	    border-width: 10px;
+	}
+
+	.pickBlock__scissors_step2 {
+	    box-shadow: 0 10px 1px -2px hsl(39, 89%, 49%), inset 0 10px 0 -4px hsl(217, 4%, 79%);
+	}
+
+	.pickBlock__rock_step2{
+		box-shadow: 
+			0 10px 1px -2px hsl(349, 71%, 52%),
+			inset 0 10px 0 -4px hsl(217, 4%, 79%);
+	}
+
+	.pickBlock__paper_step2{
+		box-shadow: 
+			0 10px 1px -2px hsl(230, 89%, 62%),
+			inset 0 10px 0 -4px hsl(217, 4%, 79%);
+	}
+
+	#circle{
+		width: 120px;
+		height: 120px;
+	}
+
+	#pickBlock__paper{
+	box-shadow: 
+		0 10px 1px -2px hsl(230, 89%, 62%),
+		inset 0 10px 0 -4px hsl(217, 4%, 79%);
+	}
+
+	#pickBlock__scissors{
+		box-shadow: 
+			0 10px 1px -2px hsl(39, 89%, 49%),
+			inset 0 10px 0 -4px hsl(217, 4%, 79%);
+	}
+
+	#pickBlock__rock{
+		box-shadow: 
+			0 10px 1px -2px hsl(349, 71%, 52%),
+			inset 0 10px 0 -4px hsl(217, 4%, 79%);
+	}
+
+	#pickBlock>div{
+		width: 165px;
+    	height: 165px;
+		border-width: 18px;
+	}
+
+	#pickBlock {
+	    margin: 0 35px;
+	}
+
+	.bg-triangle {
+    	left: calc(100% / 2 - 152.5px)/*calc(50% - 30.5%)*/;
+	    width: 300px;
+	 }
+}
+
+@media screen and (max-width: 420px){
+	#pickBlock>div{
+		width: 120px;
+    	height: 120px;
+		border-width: 10px;
+	}
+	
+	.bg-triangle {
+	    left: calc(115% / 2 - 152.5px)/*calc(50% - 30.5%)*/;
+	    width: 250px;
+	    top: 118px;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.bg-triangle {
+	    left: calc(134% / 2 - 152.5px)/*calc(50% - 30.5%)*/;
+	    width: 200px;
+	    top: 130px;
+	}
+
+
+	.scoreBlock__left {
+	    font-size: 20px;
+	    line-height: 23px;
+   	}
+
+	.scoreBlock__right>span:nth-of-type(1) {
+		font-size: 14px;
+	}	
+
+	.scoreBlock__right>span:nth-of-type(2) {
+		font-size: 35px;
+	}
+
+	.scoreBlock__right {
+	    padding: 10px 20px;
+	}
+}
+
+@media screen and (max-width: 335px){
+	#pickBlock>div {
+	    width: 90px;
+	    height: 90px;
+	    border-width: 5px;
+	}
+
+	.scoreBlock__right {
+	    padding: 10px 13px;
+	}
+
+	.scoreBlock__left {
+	    font-size: 17px;
+	    line-height: 18px;
+	}
+
+	.bg-triangle {
+	    left: calc(160% / 2 - 152.5px)/*calc(50% - 30.5%); */;
+	    width: 150px;
+	    top: 110px;
+	}
+}

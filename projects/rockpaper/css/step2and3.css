@@ -1,0 +1,95 @@
+/* YouPickedBlock / display grid */
+
+*{
+	transition: 1s;
+}
+
+#YouPickedBlock{
+	margin: 50px auto;
+	display: none;
+	grid-template-columns: repeat(2, 1fr);
+	opacity: 0;
+}
+
+.youPickedBlockSmallerGrid{
+	max-width: 700px;
+}
+
+.youPickedBlockLargerGrid{
+	max-width: 940px;
+}
+
+/* circles */
+
+.pickBlock__paper_step2{
+	border: 40px solid hsl(230, 89%, 65%);
+	box-shadow: 
+		0 17px 1px -2px hsl(230, 89%, 62%),
+		inset 0 16px 0 -4px hsl(217, 4%, 79%);
+}
+
+.displaynone{
+	display: none;
+}
+
+.pickBlock__scissors_step2{
+	border: 40px solid hsl(40, 84%, 53%);
+	box-shadow: 
+		0 17px 1px -2px hsl(39, 89%, 49%),
+		inset 0 16px 0 -4px hsl(217, 4%, 79%);
+}
+
+.pickBlock__rock_step2{
+	border: 40px solid hsl(349, 70%, 56%);
+	box-shadow: 
+		0 17px 1px -2px hsl(349, 71%, 52%),
+		inset 0 16px 0 -4px hsl(217, 4%, 79%);
+}
+
+.pickBlock_img_step2{
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	background: white;
+	display: flex;
+}
+
+.margin_left_auto{
+	margin-left: auto;
+}
+
+.pickBlock_img_step2>img{
+	display: block;
+	width: 100px;
+	margin: auto;
+}
+
+#PlayerChoosen, #PCChoosen{
+	margin-top: 90px;
+}
+
+
+#YouPickedBlock_left_bottom>div:nth-of-type(1), #YouPickedBlock_right_bottom>div:nth-of-type(1){
+	text-align: center;
+}
+
+#YouPickedBlock span{
+	font-size: 30px;
+	letter-spacing: 3px;
+}
+
+/* empty circle for step 2 */
+
+#circle{
+	border-radius: 50%;
+	width: 218px;
+	height: 218px;
+	opacity: 0.3;
+	background: black;
+	margin: 135px auto;
+}
+
+/* PCChoosen*/
+#PCChoosen{
+	display: none;
+}
